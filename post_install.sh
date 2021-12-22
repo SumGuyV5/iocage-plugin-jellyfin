@@ -5,6 +5,7 @@ VERSION="10.7.7"
 fetch https://github.com/Thefrank/jellyfin-server-freebsd/releases/download/v${VERSION}/jellyfinserver-${VERSION}.pkg
 
 pkg install -y jellyfinserver-$VERSION.pkg
+rm jellyfinserver-$VERSION.pkg
 
 ln -s /usr/local/lib/libsqlite3.so /usr/local/lib/libe_sqlite3
 
