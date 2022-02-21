@@ -9,12 +9,7 @@ rm jellyfinserver-$VERSION.pkg
 
 ln -s /usr/local/lib/libsqlite3.so /usr/local/lib/libe_sqlite3
 
-pw user add jellyfin -c jellyfin -u 710 -d /nonexistent -s /usr/bin/nologin
-
 sysrc jellyfinserver_enable=TRUE
-
-sysrc jellyfinserver_user="jellyfin"
-sysrc jellyfinserver_group="jellyfin"
 
 service jellyfinserver restart 2>/dev/null
 

@@ -1,3 +1,3 @@
 {
-        "servicerestart": "service jellyfinserver restart"
+	"servicerestart": "service jellyfinserver restart"
 }
