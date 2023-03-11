@@ -1,7 +1,7 @@
 #!/bin/sh -x
 IP_ADDRESS=$(ifconfig | grep -E 'inet.[0-9]' | grep -v '127.0.0.1' | awk '{ print $2}')
 
-VERSION="10.8.8"
+VERSION="10.8.9"
 fetch https://github.com/Thefrank/jellyfin-server-freebsd/releases/download/v${VERSION}/jellyfinserver-${VERSION}.pkg
 
 pkg install -y jellyfinserver-$VERSION.pkg
